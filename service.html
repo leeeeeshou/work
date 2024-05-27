@@ -13,6 +13,13 @@
     </head>
 <body>
     <div id="app">
+        <div class="hambar">
+            <ul>
+              <li v-for="banner in banners">
+                <a v-bind:href="banner.href">{{banner.item}}</a> 
+              </li>
+            </ul>
+          </div>
         <div class="banner">
             </div>
             <div class="servicepage"></div>
