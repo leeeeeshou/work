@@ -369,6 +369,7 @@ color: grey;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .workarea img{
     position: absolute;
