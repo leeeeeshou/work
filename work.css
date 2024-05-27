@@ -89,7 +89,7 @@ a{
     background-position: 50% 50%;
   }
 
-  /*banner*/
+  /*上面是banner*/
   
 .banner2 {
     width: 100%;
@@ -154,7 +154,7 @@ a{
     bottom: -10px;
   }
 
-/*banner2*/
+/*在PAGE頁面的banner2*/
 .main  {
     width: 100%;
     height: content;
@@ -401,13 +401,14 @@ color: grey;
 }
 .workiconarea{
     width: 100%;
-    height: 50px;
+    height: fit-content;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-left: 60px;
     margin-top: 15px;
+    margin-left: 35px;
     flex-wrap: wrap;
+
 }
 .workicon{
     width: content;
@@ -483,6 +484,7 @@ color: grey;
   background-size: contain;
   padding-bottom: 30px;
   padding-top: 30px;
+  overflow: hidden;
 }
 
 .row{
@@ -1068,6 +1070,12 @@ flex-wrap: wrap;
     #info2{
       left: 50%;
       
+    }
+    .workiconarea{
+      margin-left: 0;
+    }
+    .workicon{
+      margin-top: 15px;
     }
 .questioncard{
   width: 150px;
