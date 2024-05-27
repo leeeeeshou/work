@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="work.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="work.js" defer></script>
+        
+    </head>
+<body>
+    <div id="app">
+        <div class="hambar">
+            <ul>
+              <li v-for="banner in banners">
+                <a v-bind:href="banner.href">{{banner.item}}</a> 
+              </li>
+            </ul>
+          </div>
+          
+        <div class="banner">
+            </div>
+            <div class="servicepage"></div>
+           <div class="servicepage"></div>
+           <h2 class="littletitle">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-left-lg.png" alt="">
+            部落格
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-right-lg.png" alt="">
+        </h2>
+        <h3 class="blogsubtitle">不定期分享技術文章</h3>
+<div class="blogmain">
+    <div class="mainleft">
+        <div class="blogcard" v-for="blog in blogs">
+          <div class="blogpic" v-bind:style="{ backgroundImage: 'url(' + blog.pic + ')' }"></div>
+            <div class="blogcontent">
+                <div class="row">
+                    <h3>{{blog.date}}</h3>
+                    <div class="icon">{{blog.icon}}</div>
+                </div>
+                
+                    <h2><a href="blogcontent.html">{{blog.title}}</a></h2>
+                
+                <div class="blogword">{{blog.content}}</div>
+            </div> 
+        </div>
+    </div>
+    <div class="mainright">
+        <ul>
+            <li>全部文章</li>
+            <li>UI/UX 新知</li>
+            <li>數位產品設計</li>
+            <li>平面設計</li>
+            <li>前端開發</li>
+        </ul>
+    </div>
+</div>
+
+<div class="servicepage"></div>
+    <div class="contact"></div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

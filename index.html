@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="work.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="work.js" defer></script>
+        
+    </head>
+<body>
+    <div id="app">
+        
+        <div class="hambar">
+            <ul>
+              <li v-for="banner in banners">
+                <a v-bind:href="banner.href">{{banner.item}}</a> 
+              </li>
+            </ul>
+          </div>
+        <div class="banner">
+          
+        </div>
+<div class="indexmain">
+    <div class="indexml">
+        <h1>Hi！我是 飯糰</h1>
+        <h2>具有 0 年經驗的菜逼八前端工程學習者QQ
+           熱衷於優化使用者的網頁體驗
+        </h2>
+        <h3>WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</h3>
+
+    </div>
+    <div class="indexmr">
+        <img src="https://s3-alpha-sig.figma.com/img/e69c/102a/794c530ec9669d73d6d1ac2971ba06d2?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KjhwD9enmj7WRBqAi7Xx7j5svs7qMpNnV-seRt2jeATTZfNkNMuAG1SrqapWGt2y5hWrkfaPMiu63eq6fBYOFCoDtq-9uduSkfoV5v5m3jvnCzXnsWGsQlTreSanDqEIE36E8kKW2E~6RnmTdQTwDWOG0zWb-zO9K~b5hICVrODsS77GZvzn6a7jyBkZj~1Bt7qtUQ8We~vMfDbYuXW7fSCxfqqrC5cuXMvVysIdwQbvAqAT4mGr5q7hAmXjXKT43kYCWhbjGJGlAoCg~93G6uP~hKeVHOl20QQMvApOyxcoN2AUpKBK~hB7RoDbovGKeInfkwYzLyDaLKQMTgw3BQ__" alt="">
+    </div>
+    <div class="workintroduce">
+        <h2>作品介紹</h2>
+    </div> 
+</div>
+
+<div class="workarea workno1">
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work1.png" alt="">
+    <div class="workinfo" v-bind:id="cards[0].id">
+        <h2>{{cards[0].title}}</h2>
+        <h3>{{cards[0].subtitle}}</h3>
+        <div class="workiconarea">
+        <div class="workicon" v-for=" icn in cards[0].icon">{{icn}}</div>
+    </div>
+        <hr>
+        <button class="interbtn">完整介紹</button>
+    </div>
+</div>
+<div class="workarea workno2">
+    <div class="wk2cover"></div>
+    <div class="workinfo" v-bind:id="cards[1].id">
+        <h2>{{cards[1].title}}</h2>
+        <h3>{{cards[1].subtitle}}</h3>
+        <div class="workiconarea">
+        <div class="workicon" v-for=" icn in cards[1].icon">{{icn}}</div>
+    </div>
+        <hr>
+        <button class="interbtn">完整介紹</button>
+    </div>
+</div>
+<div class="workarea workno3">
+    <div class="wk3cover"></div>
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work3.png" alt="">
+    <div class="workinfo" v-bind:id="cards[2].id">
+        <h2>{{cards[2].title}}</h2>
+        <h3>{{cards[2].subtitle}}</h3>
+        <div class="workiconarea">
+        <div class="workicon" v-for=" icn in cards[2].icon">{{icn}}</div>
+    </div>
+        <hr>
+        <button class="interbtn">完整介紹</button>
+    </div>
+</div>
+<div class="servicesrea">
+    <h2 id="serviceslogon">
+        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-left-lg.png" alt="">
+        服務項目
+        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-right-lg.png" alt=""></h2>
+    <div class="row">
+    <div class="servicecard">
+        <div class="serviceicon">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-visual.svg" alt="">
+
+        </div>
+        <h3>平面設計</h3>
+    </div>
+    <div class="servicecard">
+        <div class="serviceicon">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-ui.svg" alt="">
+        </div>
+        <h3>UI設計</h3>
+    </div>
+    <div class="servicecard">
+        <div class="serviceicon">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-html%26css.svg" alt="">
+        </div>
+        <h3>切版服務</h3>
+    </div>
+    <div class="servicecard">
+        <div class="serviceicon">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-front-end.svg" alt="">
+        </div>
+        <h3>前端開發</h3>
+    </div>
+</div>
+    <h2>想要合作或是理解更多?</h2>
+    <button>詳細內容與合作流程</button>
+</div>
+
+
+
+<div class="newsarea">
+<h2>
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-left-lg.png" alt="">
+    精選文章
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-right-lg.png" alt="">
+</h2>
+<div class="row">
+    
+    <div class="newscard" v-for="pag in news"  v-bind:id="pag.id">
+<a href="blog.html"><div class="newspic" v-bind:style="{ backgroundImage: 'url(' + pag.pic + ')' }"></div></a>
+<div class="newstitle"><a href="blog.html">{{pag.title}}</a></div>
+<div class="newsiconarea">
+    <div class="newsicon">{{pag.icon}}</div>
+    <div class="newsdate">{{pag.date}}</div>
+</div>
+</div>
+</div>
+    <div class="row">
+    <div class="newsdot" id="dot1"></div>
+    <div class="newsdot" id="dot2"></div>
+    <div class="newsdot" id="dot3"></div>
+</div>
+
+
+
+</div>
+    <div class="contact"></div>
+    </div>
+
+</body>
+</html>

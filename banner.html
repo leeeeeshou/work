@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="work.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<div class="logo"></div>
+        <ul>
+           <li v-for="banner in banners">
+                <div class="border rt"></div>
+                <div class="border rb"></div>
+                <div class="border lt"></div>
+                <div class="border lb"></div>
+                <a v-bind:href="banner.href">{{banner.item}}</a> 
+            </li>
+        </ul>
+        <div class="ham">
+            <div class="hamiconarea">
+              <div class="hamicon" id="hamicon1"></div>
+              <div class="hamicon" id="hamicon2"></div>
+              <div class="hamicon" id="hamicon3"></div>
+            </div>
+          </div>
+
+
+         
