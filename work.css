@@ -1024,7 +1024,7 @@ flex-wrap: wrap;
 }
 .blogpicarea img{
   width: 45%;
-  margin: 15px;
+  margin: 1%;
 }
 
 
@@ -1066,5 +1066,26 @@ flex-wrap: wrap;
 .questioncard{
   width: 150px;
   height: 200px;
+}
+.mainright{
+  display: none;
+}
+.mainleft{
+  width: 100%;
+}
+.blogcard{
+  height: 440px;
+}
+.blogpic{
+  width: 100%;
+  height: 200px;
+  background-position: 50% 50%;
+}
+.blogcontent{
+  width: 100%;
+  height: 240px;
+}
+.blogpicarea img{
+  width: 100%;
 }
   }
